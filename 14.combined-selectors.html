@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Element with Class Selector</title>
+    <style>
+        /* all with class="highlight" */
+        .highlight {
+            background-color: green;
+        }
+
+        /* all p elements with class="highlight" */ 
+        p.highlight {
+            font-style: italic;
+        }
+
+        /* all elements with class 'highlight' as well as with class 'mainpointasd' */
+        .highlight.mainpoint {
+            color: red;
+            background-color: black;
+        }
+
+    </style>
+</head>
+<body>
+    <h1 class="highlight"> Element with Class Selector</h1>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+        Sed mattis viverra metus nec varius. Mauris ut tortor venenatis, 
+        sollicitudin sapien et, tincidunt erat. Ut quis eleifend nisl. 
+        Cras id cursus nibh. Mauris ac ligula tincidunt, ultrices dolor 
+        id, congue felis. Pellentesque eget pretium massa. Pellentesque
+        accumsan, velit vitae iaculis iaculis, erat erat feugiat nunc,
+        vitae fringilla tellus lacus et justo. Sed pellentesque dictum 
+        erat, quis hendrerit ipsum hendrerit sed. Nulla in dolor ligula.
+        Nunc vel posuere diam. Cras ultrices id nunc sit amet semper.
+        Proin hendrerit sagittis porta. Nullam euismod condimentum purus
+        non aliquam. Mauris venenatis commodo elit, sit amet imperdiet 
+        justo sagittis ut. Phasellus eu nisi lorem. Quisque et gravida arcu.
+    </p>
+    <p class="highlight">
+        This is P with CLASS="highlight"
+    </p>
+    <!-- Multiple classes assigned to div-->
+    <div class="mainpoint highlight">This is the main point of the entire article.</div>
+</body>
+</html>
