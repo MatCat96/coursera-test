@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Two Columns Design</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            /* with default content-box, the 1px border makes the box exceed limits so we cannot have two columns */
+        }
+        div {
+            /* background-color: #00FFFF; */
+        }
+        p {
+            width: 50%;
+            border: 1px solid black;
+            float: left;
+            padding: 10px;
+        }
+        #p1 {
+            /* background-color: #A52A2A; */
+        }
+        #p2 {
+            /* background-color: #DEB887; */
+        }
+        section {
+            clear: left;        /* nothing allowed to float to the left */
+        }
+    </style>
+</head>
+<body>
+   <h1>Two Columns Design</h1>
+   <div>
+    <p id="p1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pretium, lacus et consectetur rhoncus, dui massa egestas nunc, ut hendrerit diam quam ut lorem. Maecenas elementum bibendum eros, eu ullamcorper augue vestibulum vel.</p>
+    <p id="p2">Etiam dictum, velit vitae interdum varius, justo enim gravida neque, ac scelerisque nisl orci in mi. Fusce quis dui ac sem fringilla faucibus. In molestie porta ipsum, non consectetur felis mattis vitae. Nunc blandit, mauris ac blandit gravida, lectus eros pulvinar risus, id vehicula tellus nunc in nunc. Mauris id turpis ex. Curabitur hendrerit, magna at vestibulum tincidunt, elit enim vestibulum dui, ac faucibus enim quam at purus. Fusce erat lacus, dapibus vel eros vitae, congue hendrerit risus. Donec ac arcu diam. Duis porttitor, nibh ac sagittis feugiat, sapien dui porta est, eget bibendum nisi diam sit amet nunc. Morbi sed sollicitudin mi, quis congue felis. Vivamus pulvinar quis nisi at tempor. Duis vel malesuada nunc, vitae rutrum mauris. Donec mattis diam magna, ut placerat magna lobortis at.</p>
+    <section>This is regular content continuing after the paragraph boxes.</section>
+   </div> 
+</body>
+</html>
